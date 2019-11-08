@@ -42,15 +42,30 @@ ul
 	line-height: 17px
 	outline: none
 
+.input::placeholder
+	text-transform: uppercase
+	font-weight: 500
+	font-size: 13px
+
 .input
+	font-family: 'Proxima Nova', sans-serif
 	width: 370px
 	border: none
 	height: 70px
 	background-color: #f2f2f2
-	padding-left: 30px
+	padding: 0 80px 0 30px
 	color: #818181
-	font-size: 13px
+	font-size: 14px
 	font-weight: 500
+	position: relative
+	background-repeat: no-repeat
+	background-position: 320px center
+
+.input:focus::placeholder
+	color: transparent
+	transition: all 0.3s
+
+
 	
 
 
@@ -169,12 +184,19 @@ ul
 			flex-wrap: wrap
 			justify-content: space-between
 			align-items: center
-			width: 800px
-			text-align: left
+			max-width: 800px
 			padding: 0 12px
 
 			.input
 				margin-bottom: 30px
+
+			.input:first-child
+				background-image: url('../img/mail-icon.svg')
+
+			.input:nth-child(2)
+				background-image: url('../img/phone-icon.svg')
+
+					
 
 		&__text
 			padding-right: 60px
@@ -189,7 +211,7 @@ ul
 
 		.btn
 			background-color: $blue
-			transition: all 0,3
+			transition: all 0.3s
 
 			&:hover
 				background-color: darken($blue, 10%)

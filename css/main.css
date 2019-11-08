@@ -33,15 +33,28 @@ ul {
   line-height: 17px;
   outline: none; }
 
+.input::placeholder {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 13px; }
+
 .input {
+  font-family: 'Proxima Nova', sans-serif;
   width: 370px;
   border: none;
   height: 70px;
   background-color: #f2f2f2;
-  padding-left: 30px;
+  padding: 0 80px 0 30px;
   color: #818181;
-  font-size: 13px;
-  font-weight: 500; }
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: 320px center; }
+
+.input:focus::placeholder {
+  color: transparent;
+  transition: all 0.3s; }
 
 .header {
   background-color: #191919;
@@ -128,11 +141,14 @@ ul {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    width: 800px;
-    text-align: left;
+    max-width: 800px;
     padding: 0 12px; }
     .price .price-form form .input {
       margin-bottom: 30px; }
+    .price .price-form form .input:first-child {
+      background-image: url("../img/mail-icon.svg"); }
+    .price .price-form form .input:nth-child(2) {
+      background-image: url("../img/phone-icon.svg"); }
   .price .price-form__text {
     padding-right: 60px;
     font-size: 14px;
@@ -145,6 +161,6 @@ ul {
     background-repeat: no-repeat; }
   .price .price-form .btn {
     background-color: #1866af;
-    transition: all 0,3; }
+    transition: all 0.3s; }
     .price .price-form .btn:hover {
       background-color: #124c82; }
