@@ -22,16 +22,15 @@ ul {
   font-size: 30px; }
 
 .btn {
+  font-family: 'Proxima Nova', sans-serif;
   display: inline-block;
   width: 370px;
-  padding: 33px 0;
+  padding: 25px 0;
   color: #fff;
   font-size: 17px;
   text-transform: uppercase;
   font-weight: 700;
-  border: none;
-  line-height: 17px;
-  outline: none; }
+  border: none; }
 
 .input::placeholder {
   text-transform: uppercase;
@@ -55,6 +54,16 @@ ul {
 .input:focus::placeholder {
   color: transparent;
   transition: all 0.3s; }
+
+.input.input-phone {
+  background-image: url("../img/phone-icon.svg"); }
+
+.section-subtitle {
+  font-size: 20px;
+  margin-top: 30px; }
+
+.tac {
+  text-align: center; }
 
 .header {
   background-color: #191919;
@@ -147,8 +156,6 @@ ul {
       margin-bottom: 30px; }
     .price .price-form form .input:first-child {
       background-image: url("../img/mail-icon.svg"); }
-    .price .price-form form .input:nth-child(2) {
-      background-image: url("../img/phone-icon.svg"); }
   .price .price-form__text {
     padding-right: 60px;
     font-size: 14px;
@@ -164,3 +171,33 @@ ul {
     transition: all 0.3s; }
     .price .price-form .btn:hover {
       background-color: #124c82; }
+
+.wait {
+  background-color: #08243e; }
+
+.wait-item {
+  margin-top: 100px; }
+  .wait-item__text {
+    max-width: 220px;
+    margin-top: 50px;
+    margin-bottom: 100px; }
+
+.search {
+  background: url("../img/search-bg.png") no-repeat center center;
+  background-size: cover; }
+  .search form {
+    margin-top: 60px;
+    padding-bottom: 60px; }
+    .search form .btn {
+      background-color: #f7b516; }
+  .search__text {
+    font-size: 14px; }
+    .search__text span {
+      display: block; }
+      .search__text span:nth-child(2) {
+        padding-top: 30px;
+        padding-bottom: 16px; }
+      .search__text span:last-child {
+        font-size: 30px;
+        font-weight: 800;
+        padding-bottom: 100px; }
