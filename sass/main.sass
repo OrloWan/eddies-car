@@ -318,5 +318,96 @@ ul
 		border: 2px solid white
 		border-radius: 50%
 		margin-bottom: 40px
+
+// QUESTIONS
+
+.questions
+	background-color: #0b3554
+	padding-bottom: 100px
+
+	.questions-img
+		max-width: 570px
+
+		img
+			width: 100%
+			height: 100%
+
+	.section-subtitle
+		margin-bottom: 100px
+
+.questions-list
+	max-width: 470px
+	text-align: left
+	font-size: 16px
+
+	.questions-list__item
+		position: relative
+		margin-bottom: 55px
+		display: flex
+		align-items: center
+		line-height: 20px
+
+	span
+		font-weight: 800
+		cursor: pointer
+		
+
+	span.active
+		color: #579eff
+		border: none
+
+
+	span:nth-child(2)
+		margin-left: 20px
+		position: relative
+		border-bottom: 1px solid #294e69
+
+	span.active:nth-child(2)
+		border-color: transparent
+
+	.questions-list__item_text
+		background-color: #fff
+		color: #000
+		font-size: 14px
+		line-height: 20px
+		padding: 15px
+		max-width: 330px
+		border-radius: 5px
+		position: absolute
+		left: 35px
+		top: 40px
+		display: none
+		z-index: 10
+
+		.close
+			font-size: 25px
+			position: absolute
+			top: 15px
+			right: 15px
+			cursor: pointer
+		
+
+		p
+			margin-bottom: 20px
+
+// WORK
+
+.work-item
+	width: 230px
+
+	&__img
+		margin-top: 100px
+
+	&__text
+		margin-top: 50px
+		margin-bottom: 100px
+
+
+
+
+			
+
+
+
 	
 @import "../css/adaptive.css"

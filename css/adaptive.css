@@ -25,7 +25,15 @@
           text-align: center;
           background: none;
           padding: 0;
-          padding-bottom: 30px; } }
+          padding-bottom: 30px; }
+  .questions .questions-list {
+    margin: 0 auto; }
+    .questions .questions-list .questions-img {
+      margin: 400px auto;
+      order: 0; }
+  .questions .row {
+    flex-direction: column;
+    align-items: center; } }
 
 @media screen and (max-width: 768px) {
   .container {
@@ -60,7 +68,10 @@
   .bonus .row {
     flex-wrap: wrap; }
     .bonus .row .bonus-item {
-      width: 45%; } }
+      width: 45%; }
+  .work .row {
+    flex-direction: column;
+    align-items: center; } }
 
 @media screen and (max-width: 576px) {
   .container {
