@@ -26,6 +26,7 @@ ul
 	padding-top: 100px
 	font-weight: 900
 
+
 .white
 	color: #fff
 
@@ -42,6 +43,7 @@ ul
 	text-transform: uppercase
 	font-weight: 700
 	border: none
+	line-height: 20px
 
 .input::placeholder
 	text-transform: uppercase
@@ -183,6 +185,8 @@ ul
 
 	.section-title
 		margin-bottom: 60px
+		margin-left: auto
+		max-width: 570px
 
 	.price-form
 		
@@ -378,6 +382,7 @@ ul
 		top: 40px
 		display: none
 		z-index: 10
+		box-shadow: 0 0 10px rgba(0,0,0,0.5)
 
 		.close
 			font-size: 25px
@@ -403,11 +408,100 @@ ul
 		margin-bottom: 100px
 
 
+// WAREHOUSE
+
+.warehouse
+	background-color: #0b3554
+	padding-bottom: 100px
+
+	.warehouse-slider.slick-slider
+		margin-top: 100px
+		
+		.slick-slide
+			padding: 0 15px
 
 
-			
+		img
+			width: 370px
 
+	
+		.slick-arrow
+			display: block
+			width: 30px
+			height: 30px
+			position: absolute
+			top: 50%
+			margin-top: -15px
+			color: transparent
+			border: none
 
+		.slick-next
+			right: 3%
+			background: url('../img/next-arrow.png') no-repeat center center
+
+		.slick-prev
+			left: 3%
+			z-index: 100
+			background: url('../img/prev-arrow.png') no-repeat center center
+
+// SERVICES
+
+.services
+	padding-bottom: 100px
+
+	.services-item
+		width: 320px
+
+		&__img
+			display: flex
+			width: 170px
+			height: 170px
+			align-items: center
+			justify-content: center
+			margin: 0 auto
+			margin-top: 100px
+			margin-bottom: 40px
+			border: 4px solid $yellow
+			border-radius: 50%
+
+// CONSULTATION
+
+.consultation
+	background-color: #0d324d
+	padding-bottom: 100px
+	position: relative
+	z-index: 10
+	overflow: hidden
+
+	span
+		display: block
+
+	&-call
+		font-size: 14px
+		margin-top: 60px
+		margin-bottom: 15px
+
+	.tell
+		font-size: 30px
+		font-weight: 800
+		margin-bottom: 60px
+
+	&-form
+
+		.btn
+			background-color: $yellow
+			margin-left: 30px
+			transition: all 0.3s
+
+			&:hover
+				background-color: darken($yellow, 10%)
+
+	&-img
+		position: absolute
+		bottom: 0
+		right: 0
+		max-width: 100%
+		z-index: -1
 
 	
 @import "../css/adaptive.css"
