@@ -12,6 +12,8 @@
   section.price {
     text-align: center;
     font-size: 66px; }
+    section.price .section-title {
+      margin: 0 auto 60px; }
     section.price .row {
       align-items: center;
       justify-content: center; }
